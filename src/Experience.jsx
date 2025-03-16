@@ -25,18 +25,18 @@ export const Experience = () => {
     return (
         <>
             <div className="relative rounded">
-                <div className="isolate px-6 lg:px-6 py-22 experience-section">
+                <div className="isolate px-4 lg:px-6 py-10 sm:py-22 experience-section">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl xl:text-5xl">
                             Experience
                         </h1>
-                        <p className="mt-6 text-lg font-medium text-gray-500 sm:text-[18px] sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-4">
                             My work experience as a software engineer and working on different projects.
                         </p>
                     </div>
 
 
-                    <div className="flex  items-center justify-center w-full py-10">
+                    <div className="flex  items-center justify-center w-full py-5 lg:py-10">
                         <div className="hidden 2xl:block">
                             <OrbitingCircles iconSize={40}>
                                 <Icons.vscode />
@@ -58,7 +58,7 @@ export const Experience = () => {
                             {experience.map((exp, index) => (
                                 <div
                                     key={index}
-                                    className="relative mb-10 max-w-xl p-6 shadow-lg rounded-2xl border border-gray-200 hover:cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl group overflow-hidden"
+                                    className="relative mb-10 max-w-xl p-4 sm:p-6 shadow-lg rounded-2xl border border-gray-200 hover:cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl group overflow-hidden"
                                 >
                                     {/* Circle Indicator */}
                                     <div className="absolute -left-[30px] top-5 w-4 h-4 bg-purple-400 rounded-full"></div>
@@ -66,8 +66,8 @@ export const Experience = () => {
                                     <div className="flex items-center space-x-3">
                                         {exp.svg}
                                         <div>
-                                            <h3 className="text-xl font-bold text-gray-800">{exp.role}</h3>
-                                            <p className="text-gray-600">{exp.company}</p>
+                                            <h3 className="text-[16px] sm:text-xl font-bold text-gray-800 leading-tight">{exp.role}</h3>
+                                            <p className="text-gray-600 text-[16px] sm:text-xl leading-tight">{exp.company}</p>
                                             <p className="text-gray-500 text-sm">{exp.duration}</p>
                                         </div>
                                     </div>

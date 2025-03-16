@@ -7,31 +7,31 @@ export const Contact = () => {
         <>
             <div className="relative contact-section">
                 <div className="relative rounded ">
-                    <div className="isolate px-6 lg:px-6 pb-10 z-10">
+                    <div className="isolate px-4 lg:px-6 pb-10 z-10">
                         <div className="text-center">
-                            <h1 className="flex flex-col text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+                            <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
                                 Contact
                             </h1>
-                            <p className="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-[18px] sm:mt-4">
+                            <p className="mt-2 text-[16px] font-medium text-pretty text-gray-500 sm:text-lg sm:mt-4">
                                 Feel free to reach out to me for any questions or opportunities!
                             </p>
                         </div>
-                        <div className="max-w-[600px] flex flex-col mx-auto bg-white border rounded-2xl py-8 px-7 mt-4 sm:mt-6 gap-5">
-                            <b className="text-2xl">Email Me 🚀</b>
-                            <Input type="text" placeholder="Your Email" name="email" className="placeholder:text-lg py-6" />
-                            <Input type="text" placeholder="Your Name" name="username" className="placeholder:text-lg py-6" />
-                            <Input type="text" placeholder="Subject" name="subject" className="placeholder:text-lg py-6" />
-                            <Textarea placeholder="Message" name="message" className="placeholder:text-lg h-40" />
-                            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-lg px-4 py-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700">Button</Button>
+                        <div className="max-w-[500px] xl:max-w-[600px]  flex flex-col mx-auto bg-white border rounded-2xl py-4 lg:py-6 xl:py-8 px-4 lg:px-7 mt-4 sm:mt-6 gap-3 lg:gap-4 xl:gap-5">
+                            <b className="text-[20px] xl:text-2xl">Email Me 🚀</b>
+                            <Input type="text" placeholder="Your Email" name="email" className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" />
+                            <Input type="text" placeholder="Your Name" name="username" className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" />
+                            <Input type="text" placeholder="Subject" name="subject" className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" />
+                            <Textarea placeholder="Message" name="message" className="placeholder:text-[16px] xl:placeholder:text-lg h-24 lg:h-30 xl:h-40" />
+                            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-[16px] sm:text-lg px-4 py-5 xl:py-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700">Button</Button>
                         </div>
                     </div>
                 </div>
                 <footer>
                     <div className="flex flex-col items-center">
-                        <h1 className="text-xl font-bold  text-violet-500 tracking-wide">
+                        <h1 className="text-lg sm:text-xl font-bold  text-violet-500 tracking-wide">
                             Prince Khant
                         </h1>
-                        <div className="flex justify-center gap-10 py-4">
+                        <div className="flex justify-center gap-7 sm:gap-10 py-4">
                             <Icons.facebook />
                             <Icons.twitter />
                             <Icons.linkedin />
@@ -39,9 +39,9 @@ export const Contact = () => {
                         </div>
 
                     </div>
-                    <p className="text-lg text-center py-5">© 2024 Prince Khant. All rights reserved.</p>
+                    <p className="text-sm sm:text-lg text-center py-5">© 2024 Prince Khant. All rights reserved.</p>
                 </footer>
-                <a className="absolute right-12 bottom-5 border border-gray-500 p-4 rounded-[50%] hover:cursor-pointer transition-all ease-in-out animate-bounce hover:text-gray-950 text-gray-800" href="#hero">
+                <a className="absolute right-12 bottom-5 border border-gray-500 p-3 xl:p-4 rounded-[50%] hover:cursor-pointer transition-all ease-in-out animate-bounce hover:text-gray-950 text-gray-800 hidden md:block" href="#hero">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />

@@ -17,16 +17,16 @@ export const Project = () => {
     return (
         <>
             <div className="relative rounded">
-                <div className="isolate px-6 lg:px-6 py-22">
+                <div className="isolate px-4 lg:px-6 py-10 sm:py-22">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                             Projects
                         </h1>
-                        <p className="mt-6 text-lg font-medium text-gray-500 sm:text-[18px] sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-4">
                             I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
                         </p>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-10 sm:gap-20 mt-8">
+                    <div className="flex flex-wrap justify-center gap-7 sm:gap-20 mt-8">
                         <MagicCard className="max-w-[420px] w-full">
                             <CardHeader className="px-2 gap-3">
                                 <img src={LandingPage} className="w-full border border-gray-300 rounded-xl object-cover" />
@@ -68,7 +68,7 @@ export const Project = () => {
                                     <h4 className="text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-[16px] pt-2">
+                                <p className="text-gray-500 text-sm sm:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
                                 </p>
                             </CardContent>
@@ -114,7 +114,7 @@ export const Project = () => {
                                     <h4 className="text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-[16px] pt-2">
+                                <p className="text-gray-500 text-sm sm:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
                                 </p>
                             </CardContent>
@@ -160,7 +160,7 @@ export const Project = () => {
                                     <h4 className="text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-[16px] pt-2">
+                                <p className="text-gray-500 text-sm sm:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
                                 </p>
                             </CardContent>

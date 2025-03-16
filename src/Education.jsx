@@ -25,30 +25,30 @@ export const Education = () => {
     return (
         <>
             <div className="relative rounded">
-                <div className="isolate px-6 lg:px-6 py-22 eduction-section">
+                <div className="isolate px-4 lg:px-6 py-10 sm:py-22 eduction-section">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                             Education
                         </h1>
-                        <p className="mt-6 text-lg font-medium text-gray-500 sm:text-[18px] sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-4">
                             My education has been a journey of self-discovery and growth. My educational details are as follows.
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center w-full py-10">
-                        <div className="relative border-r-4 border-purple-400 p-8 from-purple-400 to-purple-600">
+                        <div className="relative border-r-4 border-purple-400 p-4 sm:p-8 from-purple-400 to-purple-600">
                             {/* Experience Block */}
                             {education.map((value, index) => (
                                 <div
                                     key={index}
-                                    className="relative mb-10 max-w-xl p-6 shadow-lg rounded-2xl border border-gray-200 hover:cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl group overflow-hidden"
+                                    className="relative mb-10 max-w-xl p-4 sm:p-6 shadow-lg rounded-2xl border border-gray-200 hover:cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl group overflow-hidden"
                                 >
                                     {/* Circle Indicator */}
 
                                     <div className="flex items-center space-x-3">
                                         {value.svg}
                                         <div>
-                                            <h3 className="text-xl font-bold text-gray-800">{value.university}</h3>
-                                            <p className="text-gray-600 text-lg">{value.name}</p>
+                                            <h3 className="text-lg sm:text-xl font-bold text-gray-800">{value.university}</h3>
+                                            <p className="text-gray-600 leading-tight text-[16px] sm:text-lg">{value.name}</p>
                                             <p className="text-gray-500 text-sm">{value.duration}</p>
                                         </div>
                                     </div>
