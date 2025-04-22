@@ -1,10 +1,14 @@
 import './App.css'
 import Portfolio from './Portfolio'
+import { Toaster } from 'sonner'
 
 function App() {
 
   return (
-    <Portfolio />
+    <>
+      <Portfolio />
+      <Toaster position="top-right" richColors />
+    </>
   )
 }
 
