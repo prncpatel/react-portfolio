@@ -9,15 +9,20 @@ export const Contact = () => {
     const form = useRef();
     const [loading, setLoading] = useState(false);
 
+    const VITE_EMAILJS_SERVICE_ID=service_tk36ya6
+    const VITE_EMAILJS_TEMPLATE_ID=template_4wx0e9j
+    const VITE_EMAILJS_PUBLIC_KEY=_hUZINeLPYYvvJKDg
+
     const sendEmail = (e) => {
         e.preventDefault();
         setLoading(true);
 
+
         emailjs.sendForm(
-            import.meta.env.VITE_EMAILJS_SERVICE_ID,
-            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            import.meta.env.VITE_EMAILJS_SERVICE_ID || VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID || VITE_EMAILJS_TEMPLATE_ID,
             form.current,
-            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY || VITE_EMAILJS_PUBLIC_KEY
         )
             .then((result) => {
                 toast.success('Message sent successfully!');
