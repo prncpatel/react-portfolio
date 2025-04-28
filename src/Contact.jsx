@@ -1,8 +1,37 @@
 import { Button } from "./components/ui/button"
 import { Input } from "./components/ui/input"
 import { Textarea } from "./components/ui/textarea"
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from "react";
+import { toast } from "sonner";
 
 export const Contact = () => {
+    const form = useRef();
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+            .then((result) => {
+                toast.success('Message sent successfully!');
+                form.current.reset();
+            })
+            .catch((error) => {
+                toast.error('Failed to send message. Please try again.');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                setLoading(false);
+            });
+    };
+
     return (
         <>
             <div className="relative contact-section">
@@ -16,14 +45,47 @@ export const Contact = () => {
                                 Feel free to reach out to me for any questions or opportunities!
                             </p>
                         </div>
-                        <div className="max-w-[500px] xl:max-w-[600px]  flex flex-col mx-auto bg-white border rounded-2xl py-4 lg:py-6 xl:py-8 px-4 lg:px-7 mt-4 sm:mt-6 gap-3 lg:gap-4 xl:gap-5">
+                        <form 
+                            ref={form} 
+                            onSubmit={sendEmail}
+                            className="max-w-[500px] xl:max-w-[600px]  flex flex-col mx-auto bg-white border rounded-2xl py-4 lg:py-6 xl:py-8 px-4 lg:px-7 mt-4 sm:mt-6 gap-3 lg:gap-4 xl:gap-5"
+                        >
                             <b className="text-[20px] xl:text-2xl">Email Me 🚀</b>
-                            <Input type="text" placeholder="Your Email" name="email" className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" />
-                            <Input type="text" placeholder="Your Name" name="username" className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" />
-                            <Input type="text" placeholder="Subject" name="subject" className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" />
-                            <Textarea placeholder="Message" name="message" className="placeholder:text-[16px] xl:placeholder:text-lg h-24 lg:h-30 xl:h-40" />
-                            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-[16px] sm:text-lg px-4 py-5 xl:py-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700">Button</Button>
-                        </div>
+                            <Input 
+                                type="email" 
+                                placeholder="Your Email" 
+                                name="user_email" 
+                                className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" 
+                                required 
+                            />
+                            <Input 
+                                type="text" 
+                                placeholder="Your Name" 
+                                name="name" 
+                                className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" 
+                                required 
+                            />
+                            <Input 
+                                type="text" 
+                                placeholder="Subject" 
+                                name="title" 
+                                className="placeholder:text-[16px] xl:placeholder:text-lg py-5 xl:py-6" 
+                                required 
+                            />
+                            <Textarea 
+                                placeholder="Message" 
+                                name="message" 
+                                className="placeholder:text-[16px] xl:placeholder:text-lg h-24 lg:h-30 xl:h-40" 
+                                required 
+                            />
+                            <Button 
+                                type="submit"
+                                disabled={loading}
+                                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-[16px] sm:text-lg px-4 py-5 xl:py-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700"
+                            >
+                                {loading ? 'Sending...' : 'Send Message'}
+                            </Button>
+                        </form>
                     </div>
                 </div>
                 <footer>
@@ -37,7 +99,6 @@ export const Contact = () => {
                             <Icons.linkedin />
                             <Icons.instagram />
                         </div>
-
                     </div>
                     <p className="text-sm sm:text-lg text-center py-5">© 2024 Prince Khant. All rights reserved.</p>
                 </footer>
