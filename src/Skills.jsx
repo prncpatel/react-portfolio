@@ -47,7 +47,7 @@ const skills = {
     "Backend": [
         {
             name: "Node Js",
-            imageSrc: "https://nodejs.org/static/images/logo.svg"
+            imageSrc: "https://tse2.mm.bing.net/th/id/OIP.xQJlilCdJ7U2ebPvc8DYLwHaIJ?rs=1&pid=ImgDetMain"
         },
         {
             name: "Express Js",
@@ -69,7 +69,7 @@ const skills = {
         },
         {
             name: "powershell",
-            imageSrc: "https://play-lh.googleusercontent.com/KkWKouNORlKAzSJQbwPCYpwK2vqZMA0cQI_7eO1Zmq1otSbTqLvd8gQY-GE1hcLncux4"
+            imageSrc: "https://cdn.iconscout.com/icon/free/png-512/powershell-3628993-3030218.png"
         }, {
             name: "React Testing Library",
             imageSrc: "https://th.bing.com/th/id/OIP.4sEeLWBK1WczSAUt3L63FwAAAA?rs=1&pid=ImgDetMain"
@@ -146,10 +146,10 @@ export const Skills = () => {
             <div className="relative rounded">
                 <div className="isolate px-4 lg:px-6 pt-10 lg:pt-22 z-10">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-balance text-gray-900 md:text-4xl xl:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-balance text-gray-900 md:text-[32px] xl:text-5xl">
                             Skills
                         </h1>
-                        <p className="mt-2 text-[16px] font-medium text-pretty text-gray-500 sm:text-lg sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-pretty text-gray-500 sm:text-lg sm:mt-3 xl:mt-4">
                             Here are some of my skills on which I have been working on for the past 2 years.
                         </p>
                     </div>
@@ -157,15 +157,15 @@ export const Skills = () => {
                         {Object.entries(skills).map(([key, items]) => (
                             <Card className="max-w-[450px] w-full bg-gray-100 border-purple-300 z-1 shadow-xl shadow-purple-100 gap-2.5" key={key} data-aos="flip-left" >
                                 <CardHeader className="text-center">
-                                    <CardTitle className="text-xl lg:text-[22px] xl:text-2xl text-gray-700 leading-tight">{key}</CardTitle>
+                                    <CardTitle className="text-xl xl:text-2xl text-gray-700 leading-tight">{key}</CardTitle>
                                 </CardHeader>
                                 <CardContent className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-6">
                                     {
                                         items.map((item, index) => (
                                             <div className="" key={index}>
                                                 <div className="flex items-center gap-x-1.5 sm:gap-x-2 border border-gray-400 rounded-2xl p-1.5 sm:p-2 bg-[linear-gradient(-75deg,hsl(var(--primary)/10%)_calc(var(--x)+20%),hsl(var(--primary)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))]">
-                                                    <img src={item.imageSrc} alt="React Logo" className="w-7 h-7" />
-                                                    <span className="text-sm lg:text-[16px] xl:text-xl">{item.name}</span>
+                                                    <img src={item.imageSrc} alt="React Logo" className="x-5 h-5 xl:w-7 xl:h-7" />
+                                                    <span className="text-sm xl:text-xl">{item.name}</span>
                                                 </div>
                                             </div>
                                         ))                                      

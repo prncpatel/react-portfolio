@@ -32,16 +32,16 @@ export const Hero = () => {
                 </div>
                 <div className="max-w-2xl py-32 xl:py-56" data-aos="fade-up">
                     <div className="">
-                        <h1 className="flex flex-col text-2xl font-semibold tracking-tight text-balance text-gray-900 lg:text-6xl md:text-4xl sm:text-3xl">
+                        <h1 className="flex flex-col text-2xl font-semibold tracking-tight text-balance text-gray-900 xl:text-5xl lg:text-4xl sm:text-3xl">
                             <span>Hi, I am</span>
                             <span>Prince Khant</span>
                         </h1>
-                        <div className="flex items-center text-lg justify-start gap-x-2 md:mt-4 text-pretty text-gray-700 lg:text-4xl md:text-3xl sm:text-2xl">
+                        <div className="flex items-center text-lg justify-start gap-x-2 md:mt-4 text-pretty text-gray-700 lg:text-[32px] xl:text-4xl md:text-3xl sm:text-2xl">
                             <span>
                                 I am a
                             </span>
                             <WordRotate
-                                className="text-[20px] font-bold text-purple-500 dark:text-white sm:text-2xl md:text-3xl lg:text-4xl"
+                                className="text-[20px] font-bold text-purple-500 dark:text-white sm:text-2xl md:text-3xl lg:text-[32px] xl:text-4xl"
                                 words={["Front End Developer", "Programmer", "MERN Stack Developer"]}
                             />
                         </div>
