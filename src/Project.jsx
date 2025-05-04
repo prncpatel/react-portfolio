@@ -1,7 +1,7 @@
-
 import { MagicCard } from "./components/magicui/magic-card"
 import { CardContent, CardHeader } from "./components/ui/card"
 import LandingPage from "./assets/LandingPage.png"
+import SchoolUILandingPage from "./assets/SchoolUILandingPage.png"
 import { AnimatedGradientText } from "./components/magicui/animated-gradient-text";
 import Aos from "aos"
 import "aos/dist/aos.css";
@@ -68,8 +68,74 @@ export const Project = () => {
                                     <h4 className="text-lg xl:text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
+                                <div className="flex gap-3 py-1">
+                                    <a
+                                        href="https://portfolioprince-react.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm text-purple-600 hover:text-purple-700 hover:underline transition-colors"
+                                    >
+                                        View Live →
+                                    </a>
+                                </div>
                                 <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
+                                </p>
+                            </CardContent>
+                        </MagicCard>
+                        <MagicCard className="max-w-[360px] xl:max-w-[420px] w-full">
+                            <CardHeader className="px-2 gap-3">
+                                <img src={SchoolUILandingPage} className="w-full border border-gray-300 rounded-xl object-cover" />
+                                <div className="flex flex-wrap gap-1 justify-start items-start">
+                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
+                                        <AnimatedGradientText className="text-xs font-medium">
+                                            React js
+                                        </AnimatedGradientText>
+                                    </div>
+                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
+                                        <AnimatedGradientText className="text-xs font-medium">
+                                            Tailwind css
+                                        </AnimatedGradientText>
+                                    </div>
+                                    <div className="group relative  flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
+                                        <AnimatedGradientText className="text-xs font-medium">
+                                            Typescript
+                                        </AnimatedGradientText>
+                                    </div>
+                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
+                                        <AnimatedGradientText className="text-xs font-medium">
+                                            Styled Components
+                                        </AnimatedGradientText>
+                                    </div>
+                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
+                                        <AnimatedGradientText className="text-xs font-medium">
+                                            Calendar
+                                        </AnimatedGradientText>
+                                    </div>
+                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
+                                        <AnimatedGradientText className="text-xs font-medium">
+                                            Vite
+                                        </AnimatedGradientText>
+                                    </div>
+                                </div>
+                            </CardHeader>
+                            <CardContent className="px-3 py-2 gap-3">
+                                <div className="text-gray-600 py-1">
+                                    <h4 className="text-lg xl:text-xl font-bold">React - School UI</h4>
+                                    <div className="text-[12px]">Jan 2024 - March 2024</div>
+                                </div>
+                                <div className="flex gap-3 py-1">
+                                    <a
+                                        href="https://myschool-ui.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm text-purple-600 hover:text-purple-700 hover:underline transition-colors"
+                                    >
+                                        View Live →
+                                    </a>
+                                </div>
+                                <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
+                                    Explore my School UI developed with React & TypeScript, featuring a comprehensive school management portal. Built with Tailwind CSS for styling, Supports multiple user roles including admin, teacher, and student interfaces, each with their specific dashboards.
                                 </p>
                             </CardContent>
                         </MagicCard>
@@ -114,51 +180,15 @@ export const Project = () => {
                                     <h4 className="text-lg xl:text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
-                                    Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
-                                </p>
-                            </CardContent>
-                        </MagicCard>
-                        <MagicCard className="max-w-[360px] xl:max-w-[420px] w-full">
-                            <CardHeader className="px-2 gap-3">
-                                <img src={LandingPage} className="w-full border border-gray-300 rounded-xl object-cover" />
-                                <div className="flex flex-wrap gap-1 justify-start items-start">
-                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
-                                        <AnimatedGradientText className="text-xs font-medium">
-                                            React js
-                                        </AnimatedGradientText>
-                                    </div>
-                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
-                                        <AnimatedGradientText className="text-xs font-medium">
-                                            Tailwind css
-                                        </AnimatedGradientText>
-                                    </div>
-                                    <div className="group relative  flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
-                                        <AnimatedGradientText className="text-xs font-medium">
-                                            Magic UI
-                                        </AnimatedGradientText>
-                                    </div>
-                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
-                                        <AnimatedGradientText className="text-xs font-medium">
-                                            Styled Components
-                                        </AnimatedGradientText>
-                                    </div>
-                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
-                                        <AnimatedGradientText className="text-xs font-medium">
-                                            Shadcn
-                                        </AnimatedGradientText>
-                                    </div>
-                                    <div className="group relative flex rounded-full px-3 py-1 border text-purple-600 bg-purple-50 ">
-                                        <AnimatedGradientText className="text-xs font-medium">
-                                            Email Js
-                                        </AnimatedGradientText>
-                                    </div>
-                                </div>
-                            </CardHeader>
-                            <CardContent className="px-3 py-2 gap-3">
-                                <div className="text-gray-600 py-1">
-                                    <h4 className="text-lg xl:text-xl font-bold">React - Portfolio</h4>
-                                    <div className="text-[12px]">Jan 2024 - March 2024</div>
+                                <div className="flex gap-3 py-1">
+                                    <a
+                                        href="https://portfolioprince-react.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm text-purple-600 hover:text-purple-700 hover:underline transition-colors"
+                                    >
+                                        View Live →
+                                    </a>
                                 </div>
                                 <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
