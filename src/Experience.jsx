@@ -27,10 +27,10 @@ export const Experience = () => {
             <div className="relative rounded">
                 <div className="isolate px-4 lg:px-6 py-10 sm:py-22 experience-section">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl xl:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 md:text-[32px] xl:text-5xl">
                             Experience
                         </h1>
-                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-3 xl:mt-4">
                             My work experience as a software engineer and working on different projects.
                         </p>
                     </div>
@@ -66,8 +66,8 @@ export const Experience = () => {
                                     <div className="flex items-center space-x-3">
                                         {exp.svg}
                                         <div>
-                                            <h3 className="text-[16px] sm:text-xl font-bold text-gray-800 leading-tight">{exp.role}</h3>
-                                            <p className="text-gray-600 text-[16px] sm:text-xl leading-tight">{exp.company}</p>
+                                            <h3 className="text-[16px] sm:text-lg xl:text-xl font-bold text-gray-800 leading-tight">{exp.role}</h3>
+                                            <p className="text-gray-600 text-[16px] sm:text-[19px] xl:text-xl leading-tight">{exp.company}</p>
                                             <p className="text-gray-500 text-sm">{exp.duration}</p>
                                         </div>
                                     </div>

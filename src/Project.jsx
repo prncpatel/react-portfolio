@@ -19,10 +19,10 @@ export const Project = () => {
             <div className="relative rounded">
                 <div className="isolate px-4 lg:px-6 py-10 sm:py-22">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 md:text-[32px] sm:text-5xl">
                             Projects
                         </h1>
-                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-3 xl:mt-4">
                             I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
                         </p>
                     </div>

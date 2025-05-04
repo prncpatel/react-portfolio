@@ -27,10 +27,10 @@ export const Education = () => {
             <div className="relative rounded">
                 <div className="isolate px-4 lg:px-6 py-10 sm:py-22 eduction-section">
                     <div className="text-center">
-                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-gray-900 md:text-[32px] sm:text-5xl">
                             Education
                         </h1>
-                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-4">
+                        <p className="mt-2 text-[16px] font-medium text-gray-500 sm:text-lg sm:mt-3 xl:mt-4">
                             My education has been a journey of self-discovery and growth. My educational details are as follows.
                         </p>
                     </div>

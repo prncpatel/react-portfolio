@@ -43,10 +43,10 @@ export const Contact = () => {
                 <div className="relative rounded ">
                     <div className="isolate px-4 lg:px-6 pb-10 z-10">
                         <div className="text-center">
-                            <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+                            <h1 className="flex flex-col text-3xl font-semibold tracking-tight text-balance text-gray-900 md:text-[32px] sm:text-5xl">
                                 Contact
                             </h1>
-                            <p className="mt-2 text-[16px] font-medium text-pretty text-gray-500 sm:text-lg sm:mt-4">
+                            <p className="mt-2 text-[16px] font-medium text-pretty text-gray-500 sm:text-lg sm:mt-3 xl:mt-4">
                                 Feel free to reach out to me for any questions or opportunities!
                             </p>
                         </div>
