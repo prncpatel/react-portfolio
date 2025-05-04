@@ -61,7 +61,13 @@ export default function Navbar() {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <InteractiveHoverButton>Github</InteractiveHoverButton>
+                        <a
+                            href="https://github.com/prncpatel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <InteractiveHoverButton>Github</InteractiveHoverButton>
+                        </a>
                     </div>
                 </nav>
                 <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">

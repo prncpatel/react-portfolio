@@ -27,7 +27,7 @@ export const Project = () => {
                         </p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-7 sm:gap-20 mt-8">
-                        <MagicCard className="max-w-[420px] w-full">
+                        <MagicCard className="max-w-[360px] xl:max-w-[420px] w-full">
                             <CardHeader className="px-2 gap-3">
                                 <img src={LandingPage} className="w-full border border-gray-300 rounded-xl object-cover" />
                                 <div className="flex flex-wrap gap-1 justify-start items-start">
@@ -65,15 +65,15 @@ export const Project = () => {
                             </CardHeader>
                             <CardContent className="px-3 py-2 gap-3">
                                 <div className="text-gray-600 py-1">
-                                    <h4 className="text-xl font-bold">React - Portfolio</h4>
+                                    <h4 className="text-lg xl:text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-sm sm:text-[16px] pt-2">
+                                <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
                                 </p>
                             </CardContent>
                         </MagicCard>
-                        <MagicCard className="max-w-[420px] w-full">
+                        <MagicCard className="max-w-[360px] xl:max-w-[420px] w-full">
                             <CardHeader className="px-2 gap-3">
                                 <img src={LandingPage} className="w-full border border-gray-300 rounded-xl object-cover" />
                                 <div className="flex flex-wrap gap-1 justify-start items-start">
@@ -111,15 +111,15 @@ export const Project = () => {
                             </CardHeader>
                             <CardContent className="px-3 py-2 gap-3">
                                 <div className="text-gray-600 py-1">
-                                    <h4 className="text-xl font-bold">React - Portfolio</h4>
+                                    <h4 className="text-lg xl:text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-sm sm:text-[16px] pt-2">
+                                <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
                                 </p>
                             </CardContent>
                         </MagicCard>
-                        <MagicCard className="max-w-[420px] w-full">
+                        <MagicCard className="max-w-[360px] xl:max-w-[420px] w-full">
                             <CardHeader className="px-2 gap-3">
                                 <img src={LandingPage} className="w-full border border-gray-300 rounded-xl object-cover" />
                                 <div className="flex flex-wrap gap-1 justify-start items-start">
@@ -157,10 +157,10 @@ export const Project = () => {
                             </CardHeader>
                             <CardContent className="px-3 py-2 gap-3">
                                 <div className="text-gray-600 py-1">
-                                    <h4 className="text-xl font-bold">React - Portfolio</h4>
+                                    <h4 className="text-lg xl:text-xl font-bold">React - Portfolio</h4>
                                     <div className="text-[12px]">Jan 2024 - March 2024</div>
                                 </div>
-                                <p className="text-gray-500 text-sm sm:text-[16px] pt-2">
+                                <p className="text-gray-500 text-sm xl:text-[16px] pt-2">
                                     Explore my portfolio developed with React JS, featuring dynamic UI elements crafted with JSX and styled using CSS, Styled Components, and Magic-UI.while EmailJS enables direct communication.
                                 </p>
                             </CardContent>
