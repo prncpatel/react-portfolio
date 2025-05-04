@@ -1,4 +1,3 @@
-
 const education = [
     {
         university: "Pune University",
@@ -35,7 +34,11 @@ export const Education = () => {
                         </p>
                     </div>
                     <div className="flex flex-col items-center justify-center w-full py-10">
-                        <div className="relative border-r-4 border-purple-400 p-4 sm:p-8 from-purple-400 to-purple-600">
+                        <div className="relative border-r-2 border-purple-500 p-4 sm:p-8">
+                            {/* Top End Circle */}
+                            <div className="absolute right-[-9px] -top-5 w-4 h-4 rounded-full border-2 border-purple-500 z-20 bg-transparent"></div>
+                            {/* Bottom End Circle */}
+                            <div className="absolute right-[-9px] -bottom-5 w-4 h-4 rounded-full border-2 border-purple-500 z-20 bg-transparent"></div>
                             {/* Experience Block */}
                             {education.map((value, index) => (
                                 <div
@@ -43,7 +46,7 @@ export const Education = () => {
                                     className="relative mb-10 max-w-xl p-4 sm:p-6 shadow-lg rounded-2xl border border-gray-200 hover:cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl group overflow-hidden"
                                 >
                                     {/* Circle Indicator */}
-
+                                    <div className="absolute -right-5 top-5 w-4 h-4 rounded-full border-2 border-purple-500 bg-transparent z-10"></div>
                                     <div className="flex items-center space-x-3">
                                         {value.svg}
                                         <div>
@@ -52,12 +55,9 @@ export const Education = () => {
                                             <p className="text-gray-500 text-sm">{value.duration}</p>
                                         </div>
                                     </div>
-
-                                    {/* Description with Smooth Expand Effect */}
                                     <div className="relative overflow-hidden line-clamp-3 group-hover:line-clamp-none">
                                         <p className="text-gray-700 mt-4 text-sm">{value.description}</p>
                                     </div>
-
                                 </div>
                             ))}
                         </div>
